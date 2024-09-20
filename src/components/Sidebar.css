@@ -1,0 +1,61 @@
+.sidebar {
+  position: fixed; /* Make the sidebar fixed */
+  display: flex;
+  flex-direction: column;
+  width: 90px; /* Adjust the width as needed */
+  height: 90vh;
+  background-color: hsl(240, 53%, 56%);
+}
+
+.logo-container {
+  margin-top: -16px;
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  height: 90px; /* Adjust the height as needed */
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.sidebar a {
+  margin-top:-17px;
+
+  align-items: center;
+  padding: 13px;
+  text-decoration: none;
+  color: rgb(112, 46, 46);
+}
+
+.sidebar a:hover {
+  background-color: #af4747;
+}
+
+.sidebar a.active {
+  color: #00ff37;
+  background-color: #f35437;
+}
+
+.sidebar-icon {
+  width: 50px;
+  height: 11px;
+  font-size: 10px; /* Adjust the size as needed */
+  margin-right: 7px; /* Add a small margin for spacing */
+}
+/* ... (existing CSS) ... */
+
+.hover-text {
+  display: none;
+  position: absolute;
+  padding: -10px 20px;
+  color: rgb(15, 15, 15);
+  font-size: 12px;
+  z-index: 1;
+}
+
+.sidebar a:hover .hover-text {
+  display: block;
+}
